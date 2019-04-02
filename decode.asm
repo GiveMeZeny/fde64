@@ -39,7 +39,7 @@ decode:
 	je	.67
 	cmp	cl,PREFIX_SEGMENT_FS
 	je	.seg
-	cmp	ch,PREFIX_SEGMENT_CS
+	cmp	ch,PREFIX_SEGMENT_ES
 	jnz	.rex
       .seg:
 	or	[.out.prefix],PRE_SEG
